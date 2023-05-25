@@ -1,5 +1,14 @@
+/*GOOGLE FONTS*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+    --hue-color: 215;
+    --first-color: hsl(var(--hue-color), 69%, 61%);
+}
+
+
 body{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 main{
@@ -27,7 +36,7 @@ main > img{
     color: rgb(50, 50, 50);
 }
 #logo img{
-    height: 1.5rem;
+    height: 10rem;
 }
 
 #logo p{
@@ -55,7 +64,7 @@ form input{
 
 .form-container > a{
     text-decoration: none;
-    color: #2962ff;
+    color: var(--first-color);
 }
 
 #remember-checkbox{
@@ -64,7 +73,7 @@ form input{
 }
 
 form button{
-    background-color: #2962ff;
+    background-color: var(--first-color);
     color: white;
     height: 3rem;
     border-radius: 8px;
@@ -112,7 +121,9 @@ form button{
     margin: 0;
 }
 
-
+.colored_font{
+    color: var(--first-color);
+}
 @media (max-width:768px){
     main{
         grid-template-columns: 1fr;
