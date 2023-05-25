@@ -1,12 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="sign-in.css" />
     <title>Stockxtream</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <main>
+      <img alt="" src="img/login-side-img.jpg" />
+      <section id="log-in">
+        <a id="logo" href="#">
+          <img src="Draft Logo/SXtreme2.svg" alt="" />
+          <p>Stockxtream</p>
+        </a>
+        <div style="margin: 0 auto">
+          <div>
+            <form action="">
+              <div class="form-container">
+                <label for="">Email or Username</label>
+                <input type="text" />
+              </div>
+              <div class="form-container">
+                <label for="">Password</label>
+                <input type="text" />
+                <a href="">Forgot password or can't sign in</a>
+              </div>
+              <div id="remember-checkbox">
+                <input type="checkbox" />
+                <label for="">Remember me</label>
+              </div>
+
+              <button>Sign in</button>
+            </form>
+            <span class="seperator">
+              <p>or</p>
+            </span>
+            <div id="quick-login">
+              <a href="" class="quick-login-options">
+                <img src="img/icon/icons8-google.svg" alt="" />
+
+                <span> Google </span>
+              </a>
+              <a href="" class="quick-login-options">
+                <img src="img/icon/icons8-facebook.svg" alt="" />
+                <span> Facebook </span>
+              </a>
+              <a href="" class="quick-login-options">
+                <img src="img/icon/icons8-apple.svg" alt="" />
+                <span> Apple </span>
+              </a>
+              <a href="" class="quick-login-options">
+                <img src="img/icon/icons8-linkedin.svg" alt="" />
+                <span> Linkedin </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div id="sign-up">
+          <p>Do not have an account ? <a href="#">Sign up</a></p>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
