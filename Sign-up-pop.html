@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="sign-in.css">
+  <title>Sign Up</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-image: url('img/yiorgos-ntrahas-mcAUHlGirVs-unsplash.jpg');
+      background-size: cover;
+    }
+
+    .sign-up-container {
+        width: 400px;
+        padding: 40px;
+        background-color: rgba(255, 255, 255, 0.4);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .sign-up-title{
+        text-align: center;
+    }
+    
+    .sign-up-container button {
+      margin-top: 30px;
+    }
+
+    .form-container label {
+      color: #000000;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section id="sign-up-pop">
+      <div class="sign-up-container">
+        <div class="sign-up-title">
+            <h2>Create an Account</h2>
+        </div>
+        <form action="">
+          <div class="form-container">
+            <label for="fullname"><span class="blac">Full Name</span></label>
+            <input type="text" id="fullname" name="fullname">
+          </div>
+          <div class="form-container">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+          </div>
+          <div class="form-container">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+          </div>
+          <div class="form-container">
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password">
+          </div>
+          <button>Sign Up</button>
+        </form>
+    </div>
+    </section>
+  </main>
+</body>
+</html>

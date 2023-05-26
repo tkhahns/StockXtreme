@@ -121,9 +121,11 @@ form button{
     margin: 0;
 }
 
-.colored_font{
+.first_color_font{
     color: var(--first-color);
 }
+
+
 @media (max-width:768px){
     main{
         grid-template-columns: 1fr;
