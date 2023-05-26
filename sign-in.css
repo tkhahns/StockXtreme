@@ -1,5 +1,5 @@
 /*GOOGLE FONTS*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
 :root {
     --hue-color: 215;
@@ -8,7 +8,7 @@
 
 
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lora', serif;
 }
 
 main{
@@ -74,6 +74,7 @@ form input{
 
 form button{
     background-color: var(--first-color);
+    font-family: 'Lora', serif;
     color: white;
     height: 3rem;
     border-radius: 8px;
