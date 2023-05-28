@@ -1,0 +1,46 @@
+<%- include('partials/header') %>
+
+<main>
+    <img alt="" src="img/login-side-img.jpg" />
+    <section id="log-in">
+      <a id="logo" href="#">
+        <img src="Logo and Poster/StockXtreme Logo.png" alt="" />
+      </a>
+      <div style="margin: 0 auto">
+        <div>
+          <form action="/" method="POST">
+            <div class="form-container">
+              <label for="">Email or Username</label>
+              <input type="email" class="form-control" name="username"/>
+            </div>
+            <div class="form-container">
+              <label for="">Password</label>
+              <input type="password" class="form-control" name="password" />
+              <a href="">Forgot password or can't sign in</a>
+            </div>
+            <div id="remember-checkbox">
+              <input type="checkbox" />
+              <label for="">Remember me</label>
+            </div>
+
+            <button type="submit">Sign in</button>
+          </form>
+          <span class="separator">
+            or <span class="first_color_font">Sign in with</span>
+          </span>
+          <div id="quick-login">
+            <a href="/auth/google" class="quick-login-options" role="button">
+              <img src="img/icon/icons8-google.svg" alt="" />
+              <span> Google </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="sign-up">
+        <p>Do not have an account? <a href="/signup">Sign up</a></p>
+      </div>
+    </section>
+  </main>
+
+<%- include('partials/footer') %>
+
