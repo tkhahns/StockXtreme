@@ -1,40 +1,42 @@
 <%- include('partials/headerSignup') %>
 
 <main>
-    <section id="sign-up-pop">
-      <div class="sign-up-container">
-        <div class="sign-up-title">
-            <h2>Create an Account</h2>
+  <section id="sign-up-pop">
+    <div class="sign-up-container">
+      <div class="sign-up-title">
+          <h2>Create an Account</h2>
+      </div>
+      <form action="">
+        <div class="form-container">
+          <label for="fullname"><span class="blac">Full Name</span></label>
+          <input type="text" id="fullname" name="fullname">
         </div>
-        <form action="/signup" method="POST">
-          <div class="form-container">
-            <label for="fullname"><span class="blac">Full Name</span></label>
-            <input type="text" id="fullname" name="fullname">
-          </div>
-          <div class="form-container">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="username" class="form-control">
-          </div>
-          <div class="form-container">
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" class="form-control">
-          </div>
-          <div class="form-container">
-            <label for="confirm-password">Confirm Password</label>
-            <input type="password" id="confirm-password" name="confirmPassword">
-          </div>
-          <button type="submit">Sign Up</button>
-        </form>
-    </div>
-    </section>
-    <div id="quick-login">
-      <a href="/auth/google" role="button" class="quick-login-options">
-        <img src="img/icon/icons8-google.svg" alt="" />
-
-        <span> Google </span>
-      </a>
-    </div>
-  </main>
+        <div class="form-container">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+        </div>
+        <div class="form-container">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password">
+        </div>
+        <div class="form-container">
+          <label for="confirm-password">Confirm Password</label>
+          <input type="password" id="confirm-password" name="confirm-password">
+        </div>
+        <button>Sign Up</button>
+        <span class="separator">
+          or <span class="darkblue_color_font">Sign up with</span>
+        </span>
+        <div id="quick-login">
+          <a href="/auth/google" role="button" class="quick-login-options">
+            <img src="img/icon/icons8-google.svg" alt="" />
+            <span> Google </span>
+          </a>
+        </div>
+      </form>
+  </div>
+  </section>
+</main>
 
 
 <%- include('partials/header') %>
