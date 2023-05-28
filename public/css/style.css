@@ -126,6 +126,9 @@ form button{
     color: var(--first-color);
 }
 
+.darkblue_color_font{
+    color: darkblue;
+}
 
 @media (max-width:768px){
     main{

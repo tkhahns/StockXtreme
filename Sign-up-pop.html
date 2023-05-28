@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="sign-in.css">
+  <link rel="stylesheet" href="public/css/style.css">
   <title>Sign Up</title>
   <style>
     body {
@@ -13,7 +13,7 @@
       align-items: center;
       height: 100vh;
       margin: 0;
-      background-image: url('img/yiorgos-ntrahas-mcAUHlGirVs-unsplash.jpg');
+      background-image: url('public/img/yiorgos-ntrahas-mcAUHlGirVs-unsplash.jpg');
       background-size: cover;
     }
 
@@ -35,6 +35,11 @@
     .form-container label {
       color: #000000;
     }
+
+    .separator{
+      margin-top: 20px;
+    }
+
   </style>
 </head>
 <body>
@@ -62,6 +67,15 @@
             <input type="password" id="confirm-password" name="confirm-password">
           </div>
           <button>Sign Up</button>
+          <span class="separator">
+            or <span class="darkblue_color_font">Sign up with</span>
+          </span>
+          <div id="quick-login">
+            <a href="/auth/google" role="button" class="quick-login-options">
+              <img src="public/img/icon/icons8-google.svg" alt="" />
+              <span> Google </span>
+            </a>
+          </div>
         </form>
     </div>
     </section>
